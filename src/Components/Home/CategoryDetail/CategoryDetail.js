@@ -2,11 +2,12 @@ import React from 'react';
 import { useContext } from 'react';
 import { categoryContext } from '../../../App';
 
-const CategoryDetail = () => {
-    const [count] = useContext(categoryContext);
+const CategoryDetail = (props) => {
+    const { name } = props.product
     return (
         <div>
-            <p>CategoryDetail section: {count}</p>
+            <p>CategoryDetail section</p>
+            <p style={{ color: 'red' }}> Name: {name}</p>
         </div>
     );
 };

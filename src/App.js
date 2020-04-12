@@ -12,11 +12,11 @@ export const categoryContext = createContext();
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [category, setCategory] = useState('laptop')
   return (
 
     <div className="App">
-      <categoryContext.Provider value={[count, setCount]}>
+      <categoryContext.Provider value={[category, setCategory]}>
         <Header />
         <Home />
         <Shipment />
