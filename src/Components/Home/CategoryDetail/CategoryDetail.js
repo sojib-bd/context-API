@@ -3,10 +3,10 @@ import { useContext } from 'react';
 import { categoryContext } from '../../../App';
 
 const CategoryDetail = () => {
-    const category = useContext(categoryContext);
+    const [count] = useContext(categoryContext);
     return (
         <div>
-            <p>CategoryDetail section: {category}</p>
+            <p>CategoryDetail section: {count}</p>
         </div>
     );
 };
